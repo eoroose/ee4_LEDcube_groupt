@@ -1,0 +1,691 @@
+[p GLOBOPT AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F25K50 ]
+[d frameptr 4065 ]
+"12 /Users/master/Desktop/Work/EE4/ee4-project-Cube/fsm_cube.c
+[e E4568 . `uc
+FSM_ASKING 0
+FSM_START1 1
+FSM_BEEP1 2
+FSM_WAIT1 3
+FSM_DEAD1 4
+FSM_START2 5
+FSM_WAIT2 6
+FSM_COUNT2 7
+FSM_ALARM2 8
+FSM_DEAD2 9
+FSM_START3 10
+FSM_SEQ_ON3 11
+FSM_SEQ_OFF3 12
+FSM_WAIT3 13
+FSM_USER3 14
+FSM_CHECK3 15
+FSM_DEAD3 16
+]
+"4 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"62 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"19 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"7 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"7 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"6 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/rand.c
+[v _srand srand `(v  1 e 1 0 ]
+"12
+[v _rand rand `(i  1 e 2 0 ]
+"10 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/Umul64.c
+[v ___omul __omul `(ul  1 e 4 0 ]
+"34 /Users/master/Desktop/Work/EE4/ee4-project-Cube/fsm_cube.c
+[v _fsm_cube_init fsm_cube_init `(v  1 e 1 0 ]
+"53
+[v _fsm_cube fsm_cube `(v  1 e 1 0 ]
+"361
+[v _fire_led fire_led `(v  1 e 1 0 ]
+"385
+[v _buttonpressed buttonpressed `(uc  1 e 1 0 ]
+"392
+[v _checkbutton checkbutton `(uc  1 e 1 0 ]
+"42 /Users/master/Desktop/Work/EE4/ee4-project-Cube/func_audio.c
+[v _AUDIO_init AUDIO_init `(v  1 e 1 0 ]
+"56
+[v _AUDIO_play AUDIO_play `(v  1 e 1 0 ]
+"69
+[v _AUDIO_stop AUDIO_stop `(v  1 e 1 0 ]
+"81
+[v _AUDIO_ISR AUDIO_ISR `(v  1 e 1 0 ]
+"103
+[v _OpenTimer1 OpenTimer1 `(v  1 s 1 OpenTimer1 ]
+"119 /Users/master/Desktop/Work/EE4/ee4-project-Cube/func_servo.c
+[v _OpenTimer3 OpenTimer3 `(v  1 s 1 OpenTimer3 ]
+"38 /Users/master/Desktop/Work/EE4/ee4-project-Cube/main.c
+[v _main main `(v  1 e 1 0 ]
+"59
+[v _init init `(v  1 s 1 init ]
+"116
+[v _OpenTimer0 OpenTimer0 `(v  1 s 1 OpenTimer0 ]
+"137
+[v _timed_to_1ms timed_to_1ms `(uc  1 s 1 timed_to_1ms ]
+"152
+[v _interrupt_handler interrupt_handler `II(v  1 e 1 0 ]
+[s S974 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 ANSC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 ANSC6 1 0 :1:6 
+`uc 1 ANSC7 1 0 :1:7 
+]
+"341 /Applications/microchip/xc8/v2.05/pic/include/pic18f25k50.h
+[u S980 . 1 `S974 1 . 1 0 ]
+[v _ANSELCbits ANSELCbits `VES980  1 e 1 @3933 ]
+[s S109 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"2977
+[s S118 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S126 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S129 . 1 `S109 1 . 1 0 `S118 1 . 1 0 `S126 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES129  1 e 1 @3969 ]
+[s S42 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"3099
+[s S51 . 1 `uc 1 T1OSO 1 0 :1:0 
+`uc 1 T1OSI 1 0 :1:1 
+`uc 1 CCP1 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TX 1 0 :1:6 
+`uc 1 RX 1 0 :1:7 
+]
+[s S58 . 1 `uc 1 T13CKI 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 P1A 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 CK 1 0 :1:6 
+`uc 1 DT 1 0 :1:7 
+]
+[s S65 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 PA1 1 0 :1:2 
+]
+[s S69 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+]
+[u S72 . 1 `S42 1 . 1 0 `S51 1 . 1 0 `S58 1 . 1 0 `S65 1 . 1 0 `S69 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES72  1 e 1 @3970 ]
+"3472
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+[s S387 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"3499
+[s S396 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+`uc 1 LA7 1 0 :1:7 
+]
+[u S405 . 1 `S387 1 . 1 0 `S396 1 . 1 0 ]
+[v _LATAbits LATAbits `VES405  1 e 1 @3977 ]
+"3584
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+[s S194 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"3611
+[s S203 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S212 . 1 `S194 1 . 1 0 `S203 1 . 1 0 ]
+[v _LATBbits LATBbits `VES212  1 e 1 @3978 ]
+"3696
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+[s S989 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"4187
+[s S998 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+[u S1007 . 1 `S989 1 . 1 0 `S998 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES1007  1 e 1 @3986 ]
+[s S1029 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"4409
+[u S1047 . 1 `S1029 1 . 1 0 `S109 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES1047  1 e 1 @3987 ]
+[s S1069 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"4629
+[s S1078 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S1085 . 1 `S1069 1 . 1 0 `S1078 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES1085  1 e 1 @3988 ]
+[s S428 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 ACTIE 1 0 :1:7 
+]
+"5410
+[s S437 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 STIE 1 0 :1:7 
+]
+[s S444 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIE 1 0 :1:7 
+]
+[u S447 . 1 `S428 1 . 1 0 `S437 1 . 1 0 `S444 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES447  1 e 1 @3997 ]
+[s S344 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 ACTIF 1 0 :1:7 
+]
+"5509
+[s S353 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 STIF 1 0 :1:7 
+]
+[s S360 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S363 . 1 `S344 1 . 1 0 `S353 1 . 1 0 `S360 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES363  1 e 1 @3998 ]
+[s S520 . 1 `uc 1 TMR1IP 1 0 :1:0 
+`uc 1 TMR2IP 1 0 :1:1 
+`uc 1 CCP1IP 1 0 :1:2 
+`uc 1 SSPIP 1 0 :1:3 
+`uc 1 TXIP 1 0 :1:4 
+`uc 1 RCIP 1 0 :1:5 
+`uc 1 ADIP 1 0 :1:6 
+`uc 1 ACTIP 1 0 :1:7 
+]
+"5608
+[s S529 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSP1IP 1 0 :1:3 
+`uc 1 TX1IP 1 0 :1:4 
+`uc 1 RC1IP 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 STIP 1 0 :1:7 
+]
+[s S536 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIP 1 0 :1:7 
+]
+[u S539 . 1 `S520 1 . 1 0 `S529 1 . 1 0 `S536 1 . 1 0 ]
+[v _IPR1bits IPR1bits `VES539  1 e 1 @3999 ]
+[s S762 . 1 `uc 1 CCP2IE 1 0 :1:0 
+`uc 1 TMR3IE 1 0 :1:1 
+`uc 1 HLVDIE 1 0 :1:2 
+`uc 1 BCLIE 1 0 :1:3 
+`uc 1 EEIE 1 0 :1:4 
+`uc 1 C2IE 1 0 :1:5 
+`uc 1 C1IE 1 0 :1:6 
+`uc 1 OSCFIE 1 0 :1:7 
+]
+"5707
+[s S771 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIE 1 0 :1:2 
+`uc 1 BCL1IE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CM2IE 1 0 :1:5 
+`uc 1 CM1IE 1 0 :1:6 
+]
+[s S778 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIE 1 0 :1:6 
+]
+[u S781 . 1 `S762 1 . 1 0 `S771 1 . 1 0 `S778 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES781  1 e 1 @4000 ]
+[s S634 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 TMR3IF 1 0 :1:1 
+`uc 1 HLVDIF 1 0 :1:2 
+`uc 1 BCLIF 1 0 :1:3 
+`uc 1 EEIF 1 0 :1:4 
+`uc 1 C2IF 1 0 :1:5 
+`uc 1 C1IF 1 0 :1:6 
+`uc 1 OSCFIF 1 0 :1:7 
+]
+"5806
+[s S643 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIF 1 0 :1:2 
+`uc 1 BCL1IF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CM2IF 1 0 :1:5 
+`uc 1 CM1IF 1 0 :1:6 
+]
+[s S650 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIF 1 0 :1:6 
+]
+[u S653 . 1 `S634 1 . 1 0 `S643 1 . 1 0 `S650 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES653  1 e 1 @4001 ]
+[s S832 . 1 `uc 1 CCP2IP 1 0 :1:0 
+`uc 1 TMR3IP 1 0 :1:1 
+`uc 1 HLVDIP 1 0 :1:2 
+`uc 1 BCLIP 1 0 :1:3 
+`uc 1 EEIP 1 0 :1:4 
+`uc 1 C2IP 1 0 :1:5 
+`uc 1 C1IP 1 0 :1:6 
+`uc 1 OSCFIP 1 0 :1:7 
+]
+"5905
+[s S841 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIP 1 0 :1:2 
+`uc 1 BCL1IP 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CM2IP 1 0 :1:5 
+`uc 1 CM1IP 1 0 :1:6 
+]
+[s S848 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIP 1 0 :1:6 
+]
+[u S851 . 1 `S832 1 . 1 0 `S841 1 . 1 0 `S848 1 . 1 0 ]
+[v _IPR2bits IPR2bits `VES851  1 e 1 @4002 ]
+[s S701 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T3SYNC 1 0 :1:2 
+]
+"7133
+[s S704 . 1 `uc 1 TMR3ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 nT3SYNC 1 0 :1:2 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 T3CKPS 1 0 :2:4 
+`uc 1 TMR3CS 1 0 :2:6 
+]
+[s S711 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 T3RD16 1 0 :1:1 
+`uc 1 T3SYNC 1 0 :1:2 
+`uc 1 T3SOSCEN 1 0 :1:3 
+`uc 1 T3CKPS0 1 0 :1:4 
+`uc 1 T3CKPS1 1 0 :1:5 
+`uc 1 TMR3CS0 1 0 :1:6 
+`uc 1 TMR3CS1 1 0 :1:7 
+]
+[s S720 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T3OSCEN 1 0 :1:3 
+]
+[s S723 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SOSCEN3 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 RD163 1 0 :1:7 
+]
+[u S728 . 1 `S701 1 . 1 0 `S704 1 . 1 0 `S711 1 . 1 0 `S720 1 . 1 0 `S723 1 . 1 0 ]
+[v _T3CONbits T3CONbits `VES728  1 e 1 @4017 ]
+"7230
+[v _TMR3L TMR3L `VEuc  1 e 1 @4018 ]
+"7250
+[v _TMR3H TMR3H `VEuc  1 e 1 @4019 ]
+[s S283 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+]
+"11187
+[s S286 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+[s S293 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 T1RD16 1 0 :1:1 
+`uc 1 T1SYNC 1 0 :1:2 
+`uc 1 T1SOSCEN 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+[s S302 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1OSCEN 1 0 :1:3 
+]
+[s S305 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SOSCEN1 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 RD161 1 0 :1:7 
+]
+[u S310 . 1 `S283 1 . 1 0 `S286 1 . 1 0 `S293 1 . 1 0 `S302 1 . 1 0 `S305 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES310  1 e 1 @4045 ]
+"11277
+[v _TMR1 TMR1 `VEus  1 e 2 @4046 ]
+[s S942 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 HFIOFS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"11570
+[s S948 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 FLTS 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S956 . 1 `S942 1 . 1 0 `S948 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES956  1 e 1 @4051 ]
+[s S1107 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"11650
+[s S1114 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+[u S1118 . 1 `S1107 1 . 1 0 `S1114 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES1118  1 e 1 @4053 ]
+"11707
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"11727
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S471 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"12448
+[s S480 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S489 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S493 . 1 `S471 1 . 1 0 `S480 1 . 1 0 `S489 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES493  1 e 1 @4082 ]
+"3 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/rand.c
+[v _randx randx `l  1 s 4 randx ]
+"12 /Users/master/Desktop/Work/EE4/ee4-project-Cube/fsm_cube.c
+[v _current_state current_state `E4568  1 s 1 current_state ]
+"13
+[v _time time `ui  1 s 2 time ]
+"14
+[v _game_time game_time `ui  1 s 2 game_time ]
+"15
+[v _led_switch led_switch `c  1 s 1 led_switch ]
+"16
+[v _next_led next_led `c  1 s 1 next_led ]
+"17
+[v _score score `ui  1 s 2 score ]
+"18
+[v _status status `uc  1 s 1 status ]
+"19
+[v _count count `ui  1 s 2 count ]
+"20
+[v _loser loser `c  1 s 1 loser ]
+"21
+[v _melody_index melody_index `uc  1 s 1 melody_index ]
+"22
+[v _game3seq game3seq `[200]c  1 s 200 game3seq ]
+"23
+[v _game_lenght game_lenght `ui  1 s 2 game_lenght ]
+"24
+[v _wait_time wait_time `ui  1 s 2 wait_time ]
+"22 /Users/master/Desktop/Work/EE4/ee4-project-Cube/func_audio.c
+[v _timer_preload timer_preload `ui  1 s 2 timer_preload ]
+"23
+[v _stop stop `uc  1 s 1 stop ]
+"39
+[v _all_notes all_notes `[15]i  1 e 30 0 ]
+"40
+[v _loser_melody loser_melody `[45]i  1 e 90 0 ]
+"41
+[v _start_melody start_melody `[58]i  1 e 116 0 ]
+"18 /Users/master/Desktop/Work/EE4/ee4-project-Cube/func_servo.c
+[v _servo_setpoint servo_setpoint `[1]uc  1 e 1 0 ]
+"23
+[v _servo_counter servo_counter `uc  1 s 1 servo_counter ]
+"38 /Users/master/Desktop/Work/EE4/ee4-project-Cube/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"45
+} 0
+"137
+[v _timed_to_1ms timed_to_1ms `(uc  1 s 1 timed_to_1ms ]
+{
+"142
+} 0
+"59
+[v _init init `(v  1 s 1 init ]
+{
+"107
+} 0
+"34 /Users/master/Desktop/Work/EE4/ee4-project-Cube/fsm_cube.c
+[v _fsm_cube_init fsm_cube_init `(v  1 e 1 0 ]
+{
+"43
+} 0
+"116 /Users/master/Desktop/Work/EE4/ee4-project-Cube/main.c
+[v _OpenTimer0 OpenTimer0 `(v  1 s 1 OpenTimer0 ]
+{
+[v OpenTimer0@intEnable intEnable `uc  1 a 1 wreg ]
+[v OpenTimer0@intEnable intEnable `uc  1 a 1 wreg ]
+[v OpenTimer0@intEnable intEnable `uc  1 a 1 3 ]
+"127
+} 0
+"42 /Users/master/Desktop/Work/EE4/ee4-project-Cube/func_audio.c
+[v _AUDIO_init AUDIO_init `(v  1 e 1 0 ]
+{
+"46
+} 0
+"103
+[v _OpenTimer1 OpenTimer1 `(v  1 s 1 OpenTimer1 ]
+{
+[v OpenTimer1@intEnable intEnable `uc  1 a 1 wreg ]
+[v OpenTimer1@intEnable intEnable `uc  1 a 1 wreg ]
+[v OpenTimer1@intEnable intEnable `uc  1 a 1 3 ]
+"116
+} 0
+"53 /Users/master/Desktop/Work/EE4/ee4-project-Cube/fsm_cube.c
+[v _fsm_cube fsm_cube `(v  1 e 1 0 ]
+{
+"360
+} 0
+"6 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/rand.c
+[v _srand srand `(v  1 e 1 0 ]
+{
+[v srand@x x `ui  1 p 2 1 ]
+"9
+} 0
+"12
+[v _rand rand `(i  1 e 2 0 ]
+{
+"17
+} 0
+"15 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 9 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 1 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 5 ]
+"129
+} 0
+"361 /Users/master/Desktop/Work/EE4/ee4-project-Cube/fsm_cube.c
+[v _fire_led fire_led `(v  1 e 1 0 ]
+{
+[v fire_led@ledint ledint `uc  1 a 1 wreg ]
+[v fire_led@ledint ledint `uc  1 a 1 wreg ]
+[v fire_led@ledint ledint `uc  1 a 1 1 ]
+"384
+} 0
+"392
+[v _checkbutton checkbutton `(uc  1 e 1 0 ]
+{
+"421
+} 0
+"385
+[v _buttonpressed buttonpressed `(uc  1 e 1 0 ]
+{
+"391
+} 0
+"4 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 1 ]
+"9
+} 0
+"7 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 1 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 3 ]
+"30
+} 0
+"7 /Applications/microchip/xc8/v2.05/pic/sources/c90/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 20 ]
+[v ___awmod@counter counter `uc  1 a 1 19 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 15 ]
+[v ___awmod@divisor divisor `i  1 p 2 17 ]
+"34
+} 0
+"69 /Users/master/Desktop/Work/EE4/ee4-project-Cube/func_audio.c
+[v _AUDIO_stop AUDIO_stop `(v  1 e 1 0 ]
+{
+"71
+} 0
+"56
+[v _AUDIO_play AUDIO_play `(v  1 e 1 0 ]
+{
+[v AUDIO_play@freq freq `ui  1 p 2 1 ]
+"60
+} 0
+"152 /Users/master/Desktop/Work/EE4/ee4-project-Cube/main.c
+[v _interrupt_handler interrupt_handler `II(v  1 e 1 0 ]
+{
+"162
+} 0
+"81 /Users/master/Desktop/Work/EE4/ee4-project-Cube/func_audio.c
+[v _AUDIO_ISR AUDIO_ISR `(v  1 e 1 0 ]
+{
+"92
+} 0
